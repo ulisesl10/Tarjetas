@@ -1,0 +1,53 @@
+2022-05-04 20:16:45,864 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ApiTarjetasApplication using Java 17.0.1 on DESKTOP-I0DM6RT with PID 11132 (C:\STS\workspace\APITarjetas\target\classes started by Ulises Lupercio in C:\STS\workspace\APITarjetas)
+2022-05-04 20:16:45,864 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2022-05-04 20:16:45,867 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-05-04 20:16:45,895 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-04 20:16:45,896 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-04 20:16:46,475 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-04 20:16:46,513 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 32 ms. Found 3 JPA repository interfaces.
+2022-05-04 20:16:46,918 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9081 (http)
+2022-05-04 20:16:46,925 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9081"]
+2022-05-04 20:16:46,925 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-04 20:16:46,925 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-05-04 20:16:46,998 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-04 20:16:46,998 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1102 ms
+2022-05-04 20:16:47,018 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-05-04 20:16:47,132 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-05-04 20:16:47,136 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-05-04 20:16:47,210 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-04 20:16:47,245 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.33
+2022-05-04 20:16:47,331 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-04 20:16:47,405 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-05-04 20:16:47,904 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-04 20:16:47,910 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-04 20:16:48,346 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-04 20:16:48,505 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-04 20:16:48,615 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9081"]
+2022-05-04 20:16:48,647 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9081 (http) with context path '/api/v1/tarjetas'
+2022-05-04 20:16:48,807 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ApiTarjetasApplication in 3.163 seconds (JVM running for 3.783)
+2022-05-04 20:18:58,875 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(10)-127.0.0.1] Application shutdown requested.
+2022-05-04 20:18:58,893 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(10)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-04 20:18:58,898 ERROR com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Error thrown while acquiring connection from data source
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos esta abierta en modo EXCLUSIVO; no puede abrir conexiones adicionales
+The database is open in exclusive mode; can not open additional connections [90135-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Session.checkSuspended(Session.java:1369)
+	at org.h2.engine.Session.transitionToState(Session.java:1361)
+	at org.h2.engine.Session.waitIfExclusiveModeEnabled(Session.java:1633)
+	at org.h2.command.Command.executeQuery(Command.java:186)
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:631)
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
